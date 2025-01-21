@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Títiluos e Paragrafos</title>
+
+        <style>
+            th, td{
+                border:1px solid black ;
+            }
+            tfoot{ 
+                background-color: aqua;
+            }
+        </style>
+</head>
+<body>
+    <h1>
+        Títulos e Parágrafos
+    </h1>
+    <h2> Essa página HTML serve para explificar títulos e paragragos</h2>
+    <h3>preciso voltar a estudar</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsam necessitatibus fugit atque earum quo recusandae, dolorem alias vitae enim veritatis expedita blanditiis asperiores nostrum? Ratione cupiditate officiis eum aperiam.</p>
+
+    <p> Esse texto vai ficarm em <strong>negrito</strong></p>
+    <p><i>Italico</i></p>
+    <p><u>Sublinado</u></p>
+    <p><s>taxado</s></p>
+
+    <!-- Esse é um comentario  pode utilizar o atalho  clrt + ;-->
+
+    <!-- link externo abixo-->
+    <h2>Link Externo</h2>
+    <a href="http://www.google.com.br" target="_blank"> Clique Aqui</a>
+
+    <!-- target="_blank" serve para abrir a pagina em outra janela -->
+
+    <h2>Link interno</h2>
+
+    <a href="contato/contato.html">Contato</a>
+    <!-- se abertar clrt + barra de espaço mostra todos as pastas disponiveis -->
+     <!-- para voltar a pasta utiliza ../ -->
+
+     <h2>Imagens</h2>
+
+     <img src="src/Images/download.jpeg" alt="imagen do gandalf" title="Gandalf">
+    <img src="https://placehold.co/220x500" alt="Placehold" >
+
+    <h2>Listas  não Ordenada</h2>
+        <ul>
+            <li>Tomate</li>
+            <li>Macarrão</li>
+            <li>leita</li>
+            <li>café</li>
+        </ul>
+            <!-- Fazer a lista de forma facil ul>li*4 -->
+      
+    <h2>Lista Ordernada</h2>
+
+        <ol>
+            <li>Gato</li>
+            <li>Cachorro</li>
+            <li>Passarinho</li>
+        </ol>
+
+        <h2>Tabela</h2>
+
+         <table> <!--<<< tag reservada para tabela -->
+            <thead> <!--<<< tag cabeçario -->
+                <tr><!--<<< Linha -->
+                    <th>Produto</th><!--<<< coluna para cabeçario -->
+                    <th>Quantidade</th>
+                    <th>Preço</th>
+                    <th>BlackFriday</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Produto 1</td><!--<<< coluna para corpo -->
+                    <td colspan="1">2</td> <!--colspan serve para mesclar a coluna-->
+                    <td>10</td>
+                    <td rowspan="2">sim</td>
+                </tr>
+                <tr>
+                    <td rowspan="1">Produto 2</td> <!--rowspan serve para mesclar a linha-->
+                    <td>6</td>
+                    <td>6</td>
+
+                </tr>
+                <tr>
+                    <td>Produto 3</td>
+                    <td>9</td>
+                    <td>2</td>
+                    <td>Não</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total</td>
+                    <td>18</td>
+                </tr>    
+            </tfoot>
+
+        </table>
+
+      
+</body> 
+</html>
